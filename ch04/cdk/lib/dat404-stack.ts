@@ -6,7 +6,7 @@ import * as iam from "aws-cdk-lib/aws-iam";
 import { Construct } from "constructs";
 import * as path from "path";
 
-export class Dat401Stack extends cdk.Stack {
+export class Dat404Stack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
@@ -16,7 +16,7 @@ export class Dat401Stack extends cdk.Stack {
       tags: [
         {
           key: "Name",
-          value: "DAT401",
+          value: "DAT404",
         },
       ],
     });
@@ -26,7 +26,7 @@ export class Dat401Stack extends cdk.Stack {
 
     const lambdaFunction = new nodejs.NodejsFunction(
       this,
-      "ReinventDat401Function",
+      "ReinventDat404Function",
       {
         runtime: lambda.Runtime.NODEJS_20_X,
         entry: path.join(__dirname, "../../lambda/src/index.ts"),
@@ -42,7 +42,7 @@ export class Dat401Stack extends cdk.Stack {
 
     // Create a version and add provisioned concurrency
     const version = lambdaFunction.currentVersion;
-    new lambda.Alias(this, "ReinventDat401Alias", {
+    new lambda.Alias(this, "ReinventDat404Alias", {
       aliasName: "live",
       version,
       provisionedConcurrentExecutions: 10000,

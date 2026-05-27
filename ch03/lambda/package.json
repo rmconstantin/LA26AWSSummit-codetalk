@@ -1,7 +1,7 @@
 {
   "name": "ch02-lambda",
   "version": "1.0.0",
-  "description": "Lambda function for DAT401 demo",
+  "description": "Lambda function for DAT404 demo",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",

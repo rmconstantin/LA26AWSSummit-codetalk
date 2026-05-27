@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a re:Invent talk repository (DAT401) demonstrating Amazon Aurora DSQL development patterns through a progressive tutorial. Each chapter builds a money transfer API, demonstrating connection management, optimistic concurrency control (OCC), primary key selection, and query performance analysis.
+This is a re:Invent talk repository (DAT404) demonstrating Amazon Aurora DSQL development patterns through a progressive tutorial. Each chapter builds a money transfer API, demonstrating connection management, optimistic concurrency control (OCC), primary key selection, and query performance analysis.
 
 ## Repository Structure
 
@@ -382,7 +382,7 @@ When modifying a chapter:
 - **TypeScript config**: `tsconfig.base.json` provides shared compiler options
 - **No Docker required**: Using esbuild bundling instead of Docker containers for Lambda deployment
 - **Lambda function name**: Always `summit-dat404` across all chapters for consistent testing
-- **Stack name**: Always `ReinventDat401Stack` or `Dat401Stack` depending on chapter
+- **Stack name**: Always `ReinventDat404Stack` or `Dat404Stack` depending on chapter
 
 ## DSQL-Specific Considerations
 

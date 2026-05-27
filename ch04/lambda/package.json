@@ -1,7 +1,7 @@
 {
   "name": "ch04-lambda",
   "version": "1.0.0",
-  "description": "Lambda function for DAT401 demo - Drizzle ORM",
+  "description": "Lambda function for DAT404 demo - Drizzle ORM",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",

@@ -80,7 +80,7 @@ npm install --save-dev esbuild
 
 Edit `lib/cdk-stack.ts` to create the Lambda function with name `summit-dat404`.
 
-Edit `bin/cdk.ts` to rename the stack to `ReinventDat401Stack`.
+Edit `bin/cdk.ts` to rename the stack to `ReinventDat404Stack`.
 
 See the actual files in this directory for the complete implementation.
 
@@ -96,7 +96,7 @@ npx cdk bootstrap
 npx cdk deploy
 ```
 
-CloudFormation stack name: `ReinventDat401Stack`
+CloudFormation stack name: `ReinventDat404Stack`
 
 ### 5. Test the Lambda
 

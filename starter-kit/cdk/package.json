@@ -1,8 +1,8 @@
 {
-  "name": "dat401-cdk",
+  "name": "dat404-cdk",
   "version": "1.0.0",
   "bin": {
-    "dat401-cdk": "bin/dat401-cdk.js"
+    "dat404-cdk": "bin/dat404-cdk.js"
   },
   "scripts": {
     "build": "tsc",

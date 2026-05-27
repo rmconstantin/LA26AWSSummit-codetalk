@@ -6,7 +6,7 @@ import * as iam from "aws-cdk-lib/aws-iam";
 import { Construct } from "constructs";
 import * as path from "path";
 
-export class Dat401Stack extends cdk.Stack {
+export class Dat404Stack extends cdk.Stack {
     constructor(scope: Construct, id: string, props?: cdk.StackProps) {
         super(scope, id, props);
 
@@ -16,14 +16,14 @@ export class Dat401Stack extends cdk.Stack {
             tags: [
                 {
                     key: "Name",
-                    value: "DAT401",
+                    value: "DAT404",
                 },
             ],
         });
 
         const lambdaFunction = new nodejs.NodejsFunction(
             this,
-            "ReinventDat401Function",
+            "ReinventDat404Function",
             {
                 runtime: lambda.Runtime.NODEJS_20_X,
                 entry: path.join(__dirname, "../../lambda/src/index.ts"),

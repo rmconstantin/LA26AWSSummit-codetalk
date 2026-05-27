@@ -1,4 +1,4 @@
-# Amazon Aurora DSQL: A developer's perspective (DAT401)
+# Amazon Aurora DSQL: A developer's perspective (DAT404)
 
 In this live coding session, we'll show you how to work with Amazon Aurora DSQL from a developer's perspective. We'll develop a sample application to highlight some of the ways developing for Aurora DSQL is different than PostgreSQL. We'll cover authentication and connection management, optimistic concurrency transaction patterns, primary key selection, analyzing query performance, and best practices.
 
@@ -66,7 +66,7 @@ In the psql session, create the application role and authorize the Lambda:
 CREATE ROLE myapp WITH LOGIN;
 
 -- Authorize Lambda to use myapp role (replace with your LambdaRoleArn from deployment output)
-AWS IAM GRANT myapp TO 'arn:aws:iam::123456789012:role/ReinventDat401Stack-ReinventDat401FunctionServi-XXXXXXXXXXXX';
+AWS IAM GRANT myapp TO 'arn:aws:iam::123456789012:role/ReinventDat404Stack-ReinventDat404FunctionServi-XXXXXXXXXXXX';
 
 -- Verify the authorization
 SELECT * FROM sys.iam_pg_role_mappings;
