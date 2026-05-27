@@ -272,7 +272,7 @@ const lambdaFunction = new nodejs.NodejsFunction(this, "Function", {
   runtime: lambda.Runtime.NODEJS_20_X,
   entry: path.join(__dirname, "../../lambda/src/index.ts"),
   handler: "handler",
-  functionName: "reinvent-dat401",
+  functionName: "summit-dat404",
   timeout: cdk.Duration.seconds(30),
   memorySize: 512,
   environment: {
@@ -381,7 +381,7 @@ When modifying a chapter:
 - **Each chapter is independent**: Changes to one chapter don't affect others
 - **TypeScript config**: `tsconfig.base.json` provides shared compiler options
 - **No Docker required**: Using esbuild bundling instead of Docker containers for Lambda deployment
-- **Lambda function name**: Always `reinvent-dat401` across all chapters for consistent testing
+- **Lambda function name**: Always `summit-dat404` across all chapters for consistent testing
 - **Stack name**: Always `ReinventDat401Stack` or `Dat401Stack` depending on chapter
 
 ## DSQL-Specific Considerations

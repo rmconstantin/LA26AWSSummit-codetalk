@@ -86,7 +86,7 @@ async fn test_chapter3(client_pool: &ClientPool, creds: &CredentialCache) -> Res
     };
 
     println!(
-        "Invoking Lambda function 'reinvent-dat401' with payload '{:?}'",
+        "Invoking Lambda function 'summit-dat404' with payload '{:?}'",
         req
     );
     let response: tpcb::Response = lambda::invoke(client_pool.get(), req).await?;

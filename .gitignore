@@ -1,4 +1,18 @@
+# Build artifacts
 /target/
-.claude/
 node_modules
 cdk.out
+*.js
+*.d.ts
+*.js.map
+!jest.config.js
+
+# Runtime environment variables
+.env
+.env.*
+.env.local
+.env.*.local
+
+# IDE / tooling
+.claude/
+.DS_Store

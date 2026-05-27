@@ -31,7 +31,7 @@ export class Dat401Stack extends cdk.Stack {
         runtime: lambda.Runtime.NODEJS_20_X,
         entry: path.join(__dirname, "../../lambda/src/index.ts"),
         handler: "handler",
-        functionName: "reinvent-dat401",
+        functionName: "summit-dat404",
         timeout: cdk.Duration.seconds(30),
         memorySize: 512,
         environment: {

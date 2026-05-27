@@ -223,7 +223,7 @@ Or test directly with aws lambda invoke:
 
 ```sh
 aws lambda invoke \
-  --function-name reinvent-dat401 \
+  --function-name summit-dat404 \
   --payload '{"payer_id":1,"payee_id":2,"amount":10}' \
   response.json && cat response.json && rm response.json
 ```
@@ -690,7 +690,7 @@ Expected output:
 ```
 Testing Chapter 3: Transaction history with UUID primary keys
 
-Invoking Lambda function 'reinvent-dat401' with payload '{"payer_id":1,"payee_id":2,"amount":10}'
+Invoking Lambda function 'summit-dat404' with payload '{"payer_id":1,"payee_id":2,"amount":10}'
 Response: {
   "balance": 80,
   "duration": 18,

@@ -10,7 +10,7 @@ This chapter sets up the base infrastructure that should be deployed **before th
 
 ### What Gets Deployed
 
-- Lambda function named `reinvent-dat401` with a simple greeter handler
+- Lambda function named `summit-dat404` with a simple greeter handler
 - Database connection module using `pg` library (placeholder, no DSQL auth yet)
 
 **Note:** The DSQL cluster will be created during Chapter 01.
@@ -78,7 +78,7 @@ npm install --save-dev esbuild
 
 ### 3. Customize CDK Stack
 
-Edit `lib/cdk-stack.ts` to create the Lambda function with name `reinvent-dat401`.
+Edit `lib/cdk-stack.ts` to create the Lambda function with name `summit-dat404`.
 
 Edit `bin/cdk.ts` to rename the stack to `ReinventDat401Stack`.
 
@@ -102,7 +102,7 @@ CloudFormation stack name: `ReinventDat401Stack`
 
 ```sh
 aws lambda invoke \
-  --function-name reinvent-dat401 \
+  --function-name summit-dat404 \
   --cli-binary-format raw-in-base64-out \
   --payload '{"name":"reinvent"}' \
   /tmp/response.json
